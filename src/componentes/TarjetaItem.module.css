@@ -1,0 +1,78 @@
+/* src/componentes/TarjetaItem.module.css
+   Tarjeta de feria o evento (estilos aislados con CSS Modules) */
+.tarjeta {
+  background-color: var(--blanco);
+  border-radius: var(--radio-borde);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+  transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(46, 74, 54, 0.2);
+}
+
+.imagen {
+  position: relative;
+  height: 170px;
+  background-color: var(--verde-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  color: var(--texto-secundario);
+  font-size: 0.85rem;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: var(--verde-oscuro);
+}
+
+.amarillo {
+  background-color: var(--carnaval-amarillo);
+}
+
+.rojo {
+  background-color: var(--carnaval-rojo);
+  color: var(--blanco);
+}
+
+.naranja {
+  background-color: var(--carnaval-naranja);
+  color: var(--blanco);
+}
+
+.morado {
+  background-color: var(--carnaval-morado);
+  color: var(--blanco);
+}
+
+.cuerpo {
+  padding: 20px 22px 24px;
+}
+
+.cuerpo h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.meta {
+  color: var(--texto-secundario);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.cuerpo :global(.btn-small) {
+  margin-top: 16px;
+}

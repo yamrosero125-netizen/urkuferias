@@ -1,0 +1,74 @@
+/* src/componentes/PanelIA.module.css
+   Misma estructura de la guía, con la paleta clara del portal Urkuferias */
+.panel {
+  background: var(--blanco);
+  border: 1px solid var(--borde-suave);
+  border-left: 4px solid var(--carnaval-morado); /* color distintivo para el contenido generado por IA */
+  border-radius: 8px;
+  box-shadow: var(--sombra-suave);
+  padding: 1.2rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  color: #5b3a8c;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.boton {
+  background: #6f42a8;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-family: var(--fuente-titulos);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton:hover:not(:disabled) {
+  background: #5b3a8c;
+}
+
+.boton:disabled {
+  background: #c9d3cb;
+  color: #5c6b60;
+  cursor: not-allowed;
+}
+
+.texto {
+  color: var(--texto-principal);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 1rem 0 0.4rem;
+}
+
+.aviso {
+  color: var(--texto-secundario);
+  font-size: 0.8rem;
+}
+
+.vacio {
+  color: var(--texto-secundario);
+  margin: 1rem 0 0;
+}
+
+.error {
+  background: #fdecea;
+  border: 1px solid #e53935;
+  color: #8a1c1a;
+  padding: 0.7rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}

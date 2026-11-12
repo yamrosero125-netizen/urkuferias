@@ -1,0 +1,73 @@
+/* src/App.css — estilos propios de App: lista de ferias y formulario */
+
+/* ============ LISTA DE FERIAS Y EVENTOS ============ */
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+/* ============ FORMULARIO PARA AGREGAR UNA FERIA ============ */
+.form-feria {
+  margin-top: 40px;
+  background-color: var(--blanco);
+  border-radius: var(--radio-borde);
+  box-shadow: var(--sombra-suave);
+  padding: 24px;
+}
+
+.form-feria h3 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.form-feria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-campo label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--texto-principal);
+}
+
+.form-campo input,
+.form-campo select {
+  font-family: var(--fuente-texto);
+  font-size: 1rem;
+  color: var(--texto-principal);
+  background-color: var(--blanco);
+  padding: 10px 12px;
+  border: 1.5px solid #9db3a1;
+  border-radius: 8px;
+}
+
+.form-campo input:focus-visible,
+.form-campo select:focus-visible {
+  outline: 3px solid var(--carnaval-azul);
+  outline-offset: 1px;
+}
+
+.form-error {
+  background-color: #fdecea;
+  border: 1px solid var(--carnaval-rojo);
+  color: #8a1c1a;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.form-feria .btn-small {
+  border: none;
+}
